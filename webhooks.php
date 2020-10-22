@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text." ---groupId--".$event['source']['groupId']."--roomId--".$event['source']['roomId']
+				'text' => $text." ---groupId--".$event['source']['groupId']."--roomId--".$event['source']['room']
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
